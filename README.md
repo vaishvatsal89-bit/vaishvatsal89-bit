@@ -1,113 +1,146 @@
-<h1 align="center">Vatsal Tripathi</h1>
-<p align="center">
-  <strong>B.Tech CSE · Galgotias University</strong><br/>
-  Building production-ready full stack applications · Obsessed with clean architecture
-</p>
-<p align="center">
-  <a href="https://linkedin.com/in/vatsal-tripathi-280a55316">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:vaishvatsal89@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://instagram.com/vatsal_tripathi77">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white"/>
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=vaishvatsal89-bit&style=flat-square&color=6366f1"/>
-</p>
+<div align="center">
 
-What I'm building
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6366f1,a855f7&height=160&section=header&text=Vatsal%20Tripathi&fontSize=52&fontColor=fff&animation=fadeIn&desc=B.Tech%20CSE%20%C2%B7%20Full%20Stack%20Developer%20%C2%B7%20Galgotias%20University&descSize=16&descAlignY=78&descColor=d8b4fe"/>
+
+<br/>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Building+in+production+since+day+one.;React+%E2%80%A2+Supabase+%E2%80%A2+PostgreSQL+%E2%80%A2+Razorpay;Real+users.+Real+payments.+Real+problems.;Not+just+learning+%E2%80%94+shipping.)](https://git.io/typing-svg)
+
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/vatsal-tripathi-280a55316)
+[![Gmail](https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vaishvatsal89@gmail.com)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://instagram.com/vatsal_tripathi77)
+![Profile Views](https://komarev.com/ghpvc/?username=vaishvatsal89-bit&style=for-the-badge&color=6366f1)
+
+</div>
+
+---
+
+## 🧑‍💻 About Me
 
 Most student projects stop at CRUD with localStorage. I build things that actually run in production — with real payments, real users, and real security constraints to solve.
 
-Right now that means TaskCampus — a peer-to-peer task marketplace for college students. Think Fiverr, but for your hostel block. Post a task, a verified student accepts it, they complete it, you pay via Razorpay — all secured with OTP verification so payment only releases on confirmed completion.
+- 🎓 **B.Tech CSE** — Galgotias University
+- 🚀 Currently building **TaskCampus** — a live peer-to-peer campus task marketplace
+- 🔐 Deep into **PostgreSQL architecture**, **payment systems**, and **backend security**
+- 🎯 Goal: build things real people use, at scale
 
+---
 
-🚀 Featured Project — TaskCampus
+## 🚀 Featured Project — TaskCampus
 
+> *A peer-to-peer task marketplace for college students. Think Fiverr, but for your hostel block.*
 
-"Deliver my notes to Block C Room 214. ₹80."
+🔗 **Live:** [task-campus-three.vercel.app](https://task-campus-three.vercel.app)
 
+<table>
+<tr>
+<td width="50%">
 
+**💳 Payment & Financial**
+- Live Razorpay integration with server-side **HMAC-SHA256 signature verification** — amount verified against Razorpay API before task goes live
+- In-app wallet — earnings credited on OTP confirmation
+- Automatic refund flow via Razorpay Refund API on cancellation
 
-A live, production-deployed campus marketplace with features most developers treat as "phase 2":
+</td>
+<td width="50%">
 
-Payment & Financial
+**🗄️ Database Architecture**
+- **Race-condition safe** task acceptance using PostgreSQL stored procedures
+- Automated task expiry via **pg_cron** — runs every 5 min, warns/bans doers automatically
+- **Row Level Security** on every table
+- Full warning + ban system tracked at DB level
 
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-🔐 Razorpay live integration with server-side signature verification — the payment amount is verified against Razorpay's API before the task goes live, preventing any client-side manipulation
-💰 In-app wallet system — earnings credited on OTP verification, withdrawal requests tracked in DB
-🔄 Automatic refund flow when posters cancel unpaid tasks (Razorpay Refund API)
+**⚡ Real-time & Notifications**
+- Supabase Realtime — new tasks appear on all screens instantly
+- Browser push notifications for new task postings
+- In-app chat between poster and doer via Postgres changes subscription
 
+</td>
+<td width="50%">
 
-Database Architecture
+**🔒 Security**
+- University email verification — fake emails can't confirm accounts
+- OTP brute force protection — locked after 10 wrong attempts
+- Supabase Edge Functions (TypeScript/Deno) for all sensitive operations
+- Server-side payment verification — no client-side trust
 
+</td>
+</tr>
+</table>
 
-⚡ Race-condition safe task acceptance using PostgreSQL stored procedures — two students can't accept the same task simultaneously
-🕐 Automated task expiry via pg_cron — runs every 5 minutes, marks overdue accepted tasks as expired, sends warnings automatically
-🛡️ Row Level Security on every table — users can only access data they're authorized to see
-📊 HMAC-SHA256 payment signature verification inside a Supabase Edge Function (TypeScript/Deno)
+**Stack:**
 
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Razorpay](https://img.shields.io/badge/Razorpay-02042B?style=flat-square&logo=razorpay&logoColor=3395FF)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel)
 
-Real-time & Notifications
+---
 
+## 🛠️ Tech Stack
 
-🔔 Supabase Realtime subscriptions — new tasks appear on every connected screen instantly without refresh
-🔔 Browser push notifications when a new task is posted (Web Notifications API)
-💬 In-app chat between poster and doer — real-time via Postgres changes subscription
+**Frontend**
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3)
 
-Security
+**Backend & Database**
 
+![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=for-the-badge&logo=supabase&logoColor=black)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
 
-✅ University email domain enforcement (fake emails verified via Supabase email confirmation)
-⚠️ Warning system — doers who miss deadlines or cancel get warnings; 3 strikes = 7-day ban
-🔒 OTP brute force protection — attempt counter stored in DB, locked after 10 wrong tries
+**Payments & DevOps**
 
+![Razorpay](https://img.shields.io/badge/Razorpay-02042B?style=for-the-badge&logo=razorpay&logoColor=3395FF)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel)
 
-Stack: React + Vite · Supabase (PostgreSQL, Auth, Realtime, Edge Functions) · TypeScript/Deno · Razorpay · Vercel
+**Also know**
 
-🔗 Live: task-campus-three.vercel.app
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=for-the-badge&logo=jsonwebtokens)
+![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
 
+---
 
-💻 Tech I actually use
+## 📊 GitHub
 
-Frontend       React, Vite, JavaScript (ES2022+), CSS3
-Backend        Supabase Edge Functions (TypeScript, Deno)
-Database       PostgreSQL — RLS, triggers, stored procedures, pg_cron
-Auth           Supabase Auth — email confirmation, JWT, session management
-Payments       Razorpay — Orders API, Refunds API, signature verification
-Realtime       Supabase Realtime — postgres_changes subscriptions
-DevOps         Vercel, Git, GitHub
-Also know      Node.js, Express, MongoDB, C++
+<div align="center">
 
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaishvatsal89-bit&layout=compact&theme=tokyonight&hide_border=true&langs_count=6"/>
 
-📊 GitHub Stats
+<br/><br/>
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=vaishvatsal89-bit&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=vaishvatsal89-bit&layout=compact&theme=tokyonight&hide_border=true"/>
-</p>
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=vaishvatsal89-bit&theme=tokyonight&hide_border=true"/>
-</p>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=vaishvatsal89-bit&theme=tokyo-night&hide_border=true&area=true"/>
 
-📈 Contribution Activity
+</div>
 
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=vaishvatsal89-bit&theme=tokyo-night&hide_border=true"/>
-</p>
+---
 
-🏆 Trophies
+<div align="center">
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=vaishvatsal89-bit&theme=tokyonight&margin-w=8&no-frame=true"/>
-</p>
+<sub><i>I don't just learn technologies — I build with them until something real comes out the other end.</i></sub>
 
-Currently
+<br/><br/>
 
+<img src="https://capsule-render.vercel.app/api?type=waving&color=6366f1,a855f7&height=100&section=footer"/>
 
-🎓 B.Tech Computer Science — Galgotias University
-🏗️ Scaling TaskCampus to multiple university campuses
-📖 Going deep on system design, distributed systems, and backend architecture
-🎯 Goal: build things that real people use, at scale
+</div>
